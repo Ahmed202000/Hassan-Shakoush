@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#897A7777"
+    android:layoutDirection="ltr"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:padding="@dimen/_5sdp">
+
+        <Space
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/space1"/>
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/whiteheart"
+            android:layout_toEndOf="@+id/space1"
+            android:id="@+id/whiteheart"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/redheart"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/space1"
+            android:id="@+id/redheart"
+            android:visibility="gone"/>
+
+
+        <Space
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/space2"
+            android:layout_toStartOf="@+id/whiteheart"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مكانك فى قلبى "
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/song_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:fontFamily="@font/extra_light"/>
+
+
+
+</RelativeLayout>
